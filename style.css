@@ -256,6 +256,38 @@ footer img {
   .section {
     padding: 75px 22px;
   }
+  .quick-links {
+  background: #000000;
+  color: #E6D2B5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  border-top: 1px solid #E6D2B5;
+  border-bottom: 1px solid #E6D2B5;
+}
+
+.quick-links div {
+  padding: 28px 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  border-right: 1px solid #E6D2B5;
+}
+
+.quick-links div:last-child {
+  border-right: none;
+}
+
+.quick-links span {
+  display: block;
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .quick-links {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 }
 
   
