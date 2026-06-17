@@ -29,7 +29,7 @@ body {
   justify-content: center;
   gap: 26px;
   padding: 18px 20px;
-  background: rgba(56, 62, 66, 0.88);
+  background: rgba(0,0,0,0.95);
   backdrop-filter: blur(12px);
 }
 
@@ -72,7 +72,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(38px, 7vw, 78px);
+  font-size: clamp(28px, 5vw, 56px);
   line-height: 1.05;
   margin: 20px auto;
   max-width: 1000px;
