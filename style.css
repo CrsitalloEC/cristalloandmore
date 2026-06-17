@@ -29,7 +29,10 @@ body {
   justify-content: center;
   gap: 30px;
   padding: 20px;
-  background: rgba(5, 5, 5, 0.88);
+  background: linear-gradient(
+        90deg,
+        #4a1016,
+        #65141c);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(230, 210, 181, 0.25);
 }
@@ -53,13 +56,10 @@ body {
 
 .overlay,
 .content {
-  background: rgba(56, 62, 66, 0.78);
-  border: 1px solid rgba(230, 210, 181, 0.35);
-  border-radius: 34px;
-  padding: 55px;
-  max-width: 760px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
 }
 
 .overlay {
