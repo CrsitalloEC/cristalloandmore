@@ -309,4 +309,67 @@ footer img {
   p {
     font-size: 18px;
   }
+  .patrik-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    padding:120px 8%;
+    background:#050505;
+}
+
+.patrik-text{
+    flex:1;
+    max-width:650px;
+}
+
+.patrik-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.patrik-image img{
+    width:100%;
+    max-width:550px;
+
+    border-radius:30px;
+
+    border:2px solid rgba(230,210,181,.25);
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.55);
+
+    transition:.5s ease;
+}
+
+.patrik-image img:hover{
+    transform:translateY(-10px);
+}
+
+.patrik-section h2{
+    color:#E6D2B5;
+    margin-bottom:30px;
+}
+
+.patrik-section p{
+    color:#E6D2B5;
+    font-size:22px;
+    line-height:1.8;
+}
+
+@media(max-width:900px){
+
+    .patrik-section{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .patrik-image img{
+        max-width:420px;
+    }
+
+}
 }
