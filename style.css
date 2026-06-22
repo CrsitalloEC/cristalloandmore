@@ -90,9 +90,12 @@ body {
 }
 
 .logo {
-  width: min(560px, 86vw);
-  margin-bottom: 28px;
-  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.65));
+  width: min(520px, 86vw);
+  max-height: 220px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 28px;
+  background: transparent;
 }
 
 .label {
@@ -576,5 +579,10 @@ footer img {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+  @media (max-width: 950px) {
+  .logo {
+    width: min(360px, 82vw);
+    max-height: 150px;
   }
 }
