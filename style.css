@@ -89,14 +89,12 @@ body {
   text-align: center;
 }
 
-.logo {
-  width: min(520px, 86vw);
-  max-height: 220px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 28px;
-  background: transparent;
+  .logo {
+  width: min(620px, 90vw);
+  margin-bottom: 28px;
+  background: transparent; 
 }
+
 
 .label {
   text-transform: uppercase;
@@ -582,7 +580,11 @@ footer img {
   }
   @media (max-width: 950px) {
   .logo {
-    width: min(360px, 82vw);
-    max-height: 150px;
+    width: min(420px, 88vw);
+    max-height: none;
+    baackground: transparent; 
+  }
+  } 
+}
   }
 }
