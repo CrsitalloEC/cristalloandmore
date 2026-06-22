@@ -91,13 +91,21 @@ body {
 }
 
 .logo {
-  display: block;
-  width: min(700px, 94vw);
-  max-height: none;
-  margin: 0 auto 30px;
-  background: transparent !important;
-  object-fit: contain;
-  filter: drop-shadow(0 14px 34px rgba(0,0,0,0.70));
+    display: block;
+    width: min(700px, 94vw);
+    max-height: none;
+    margin: 0 auto 30px;
+    background: transparent !important;
+    object-fit: contain;
+    filter: drop-shadow(0 14px 34px rgba(0,0,0,0.70);
+}
+
+.logo-desktop {
+    display: block;
+}
+
+.logo-mobile {
+    display: none;
 }
 
 .label {
@@ -565,11 +573,23 @@ footer img {
 }
 
 @media (max-width: 950px) {
+
   .navbar {
-    justify-content: flex-start;
-    overflow-x: auto;
-    gap: 18px;
-    padding: 16px 18px;
+      justify-content: flex-start;
+      overflow-x: auto;
+      gap: 18px;
+      padding: 16px 18px;
+  }
+
+  .logo-desktop {
+      display: none;
+  }
+
+  .logo-mobile {
+      display: block;
+      width: 95%;
+      max-width: 520px;
+      margin: 0 auto 25px;
   }
 
   .hero,
