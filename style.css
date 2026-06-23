@@ -96,8 +96,17 @@ body {
   max-height: none;
   margin: 0 auto 30px;
   background: transparent !important;
+  background-color: transparent !important;
   object-fit: contain;
   filter: drop-shadow(0 14px 34px rgba(0,0,0,0.70));
+}
+
+.logo-desktop {
+  display: block;
+}
+
+.logo-mobile {
+  display: none;
 }
 
 .label {
@@ -371,10 +380,12 @@ footer {
   border-top: 1px solid rgba(230, 210, 181, 0.25);
 }
 
-footer img {
+footer img,
+.footer-logo {
   width: min(280px, 80vw);
   margin-bottom: 20px;
   background: transparent !important;
+  background-color: transparent !important;
 }
 
 /* Bilder */
@@ -588,6 +599,18 @@ footer img {
     max-width: 96vw;
     margin-bottom: 26px;
     background: transparent !important;
+    background-color: transparent !important;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+    width: min(560px, 96vw);
+    max-width: 96vw;
+    margin: 0 auto 26px;
   }
 
   .event-banner {
