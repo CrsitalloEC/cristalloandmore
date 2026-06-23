@@ -693,3 +693,30 @@ footer img,
     scroll-behavior: auto !important;
   }
 }
+/* iPhone/Safari Logo Fix */
+@supports (-webkit-touch-callout: none) {
+  .hero-content .logo,
+  .logo,
+  .logo-mobile,
+  .logo-desktop {
+    background: transparent !important;
+    background-color: transparent !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .logo-desktop {
+    display: none !important;
+  }
+
+  .logo-mobile {
+    display: block !important;
+    width: 92vw !important;
+    max-width: 520px !important;
+    height: auto !important;
+    margin: 0 auto 24px !important;
+  }
+}
