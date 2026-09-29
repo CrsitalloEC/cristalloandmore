@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <meta name="description"
+          content="Cristallo Eiscafé & Mehr in Gießen – unsere Webseite und Speisekarte bekommen aktuell ein Update.">
+
+    <meta name="theme-color" content="#080808">
+
+    <title>Cristallo Eiscafé & Mehr | Gießen</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+            background: #080808;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        main {
+            width: 100%;
+            background: #080808;
+        }
+
+        picture {
+            display: block;
+            width: 100%;
+        }
+
+        .hero-image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Desktop */
+        @media (min-width: 769px) {
+            .hero-image {
+                width: 100%;
+                min-height: 100vh;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        /* Smartphone / Tablet */
+        @media (max-width: 768px) {
+            .hero-image {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <picture>
+
+            <!-- Smartphone -->
+            <source
+                media="(max-width: 768px)"
+                srcset="head-mobile.png">
+
+            <!-- Desktop -->
+            <img
+                class="hero-image"
+                src="head.png"
+                alt="Cristallo Eiscafé & Mehr – Unsere Speisekarte und Webseite bekommen ein Update">
+
+        </picture>
+    </main>
+
+</body>
+
+</html>
